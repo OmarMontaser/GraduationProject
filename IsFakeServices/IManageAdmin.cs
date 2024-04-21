@@ -10,6 +10,6 @@ namespace IsFakeServices
     public interface IManageAdmin
     {
         IEnumerable<ManageAdminViewModel> GetAll();
-        Task <ManageAdminViewModel> GetAdminById(string id);
+        DetailsOfUserViewModel GetAdminData(string id);
     }
 }

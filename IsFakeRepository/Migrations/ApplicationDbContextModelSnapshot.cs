@@ -126,7 +126,7 @@ namespace IsFakeRepository.Migrations
 
                     b.HasKey("FeedbackId");
 
-                    b.ToTable("Feedbacks");
+                    b.ToTable("Feedbacks", (string)null);
                 });
 
             modelBuilder.Entity("IsFakeModels.Statement", b =>
@@ -146,7 +146,7 @@ namespace IsFakeRepository.Migrations
 
                     b.HasKey("StatementId");
 
-                    b.ToTable("Statements");
+                    b.ToTable("Statements", (string)null);
                 });
 
             modelBuilder.Entity("IsFakeModels.UserRecord", b =>
@@ -156,6 +156,10 @@ namespace IsFakeRepository.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserRecordId"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsActivation")
                         .HasColumnType("bit");
@@ -169,7 +173,9 @@ namespace IsFakeRepository.Migrations
 
                     b.HasKey("UserRecordId");
 
-                    b.ToTable("UserRecords");
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("UserRecords", (string)null);
                 });
 
             modelBuilder.Entity("IsFakeModels.UserStatement", b =>
@@ -180,11 +186,12 @@ namespace IsFakeRepository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserStatementId"));
 
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("FeedbackId")
-                        .HasColumnType("int");
 
                     b.Property<string>("VoiceFile")
                         .IsRequired()
@@ -192,9 +199,9 @@ namespace IsFakeRepository.Migrations
 
                     b.HasKey("UserStatementId");
 
-                    b.HasIndex("FeedbackId");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("UserStatements");
+                    b.ToTable("UserStatements", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -330,15 +337,26 @@ namespace IsFakeRepository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("IsFakeModels.UserStatement", b =>
+            modelBuilder.Entity("IsFakeModels.UserRecord", b =>
                 {
-                    b.HasOne("IsFakeModels.Feedback", "Feedback")
-                        .WithMany()
-                        .HasForeignKey("FeedbackId")
+                    b.HasOne("IsFakeModels.ApplicationUser", "ApplicationUser")
+                        .WithMany("UserRecords")
+                        .HasForeignKey("ApplicationUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Feedback");
+                    b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("IsFakeModels.UserStatement", b =>
+                {
+                    b.HasOne("IsFakeModels.ApplicationUser", "ApplicationUser")
+                        .WithMany("UserStatements")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -390,6 +408,13 @@ namespace IsFakeRepository.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("IsFakeModels.ApplicationUser", b =>
+                {
+                    b.Navigation("UserRecords");
+
+                    b.Navigation("UserStatements");
                 });
 #pragma warning restore 612, 618
         }

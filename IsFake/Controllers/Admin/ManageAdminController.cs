@@ -15,11 +15,11 @@ namespace IsFake.Controllers.Admin
         {
             return View(_manageadmin.GetAll());
         }
-        public async Task<IActionResult> GetAdminById(string id)
+        public IActionResult GetAdminById(string id)
         {
-            return View(await _manageadmin.GetAdminById(id));
+             return View(_manageadmin.GetAdminData(id));
         }
-
+        
 
     }
 }

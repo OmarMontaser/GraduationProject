@@ -12,6 +12,9 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="All" class="text-danger"></div>
+
+                <input asp-for="StatementId" hidden class="form-control" />
+                            
             <div class="form-group">
                 <label asp-for="Text" class="control-label"></label>
                 <input asp-for="Text" class="form-control" />

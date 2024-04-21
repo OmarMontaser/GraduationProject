@@ -7,46 +7,33 @@
 <h1>GetAllAdmins</h1>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New</a>
 </p>
-<table class="table table-striped">
-    <thead class="thead-dark">
+<table class="table">
+    <thead>
         <tr>
             <th>
-                UserName
+                @Html.DisplayNameFor(model => model.UserName)
             </th>
             <th>
-                Email
-            </th>
-            <th>
-                CreatedAt
-            </th>
-            <th>
-                IsActivate
+                @Html.DisplayNameFor(model => model.Email)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UserName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CreatedAt)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IsActivate)
-                </td>
-                <td>
-                    <a class="btn btn-info" href="@Url.Action("GetAllAdmins", "Admin", new { id = item.Id })">Admin</a>
-                </td>
-            </tr>
-        }
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                    @Html.ActionLink("Details", "GetDetailsOfUser", new {  id=item.Id  })
+            </td>
+        </tr>
+}
     </tbody>
 </table>

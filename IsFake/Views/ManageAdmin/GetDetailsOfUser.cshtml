@@ -1,0 +1,55 @@
+﻿@model IsFakeViewModels.DetailsOfUserViewModel
+
+@{
+    ViewData["Title"] = "GetDetailsOfUser";
+}
+
+<h1>GetDetailsOfUser</h1>
+
+<div>
+    <h4>DetailsOfUserViewModel</h4>
+    <hr />
+    <dl  class="row">
+        <dt hidden class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd hidden class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+                <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastLogIn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastLogIn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsActivate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsActivate)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

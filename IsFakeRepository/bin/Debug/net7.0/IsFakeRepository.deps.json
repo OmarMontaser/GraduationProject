@@ -674,8 +674,7 @@
       },
       "IsFakeModels/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.15",
-          "bootstrap": "5.3.3"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.15"
         },
         "runtime": {
           "IsFakeModels.dll": {}

@@ -22,24 +22,22 @@ namespace IsFakeServices
               _unitofwork = unitofwork;
               _userManager = userManager;
             }
+
+        public DetailsOfUserViewModel GetAdminData(string id)
+        {
+            var model = _unitofwork.GenericRepository<ApplicationUser>().GetById(id);
+            var vm = new DetailsOfUserViewModel(model);
+            return vm;
+         
+        }
+
         public IEnumerable<ManageAdminViewModel> GetAll()
         {
 
             var modelList = _unitofwork.GenericRepository<ApplicationUser>().GetAll();
             return ConvertModeltoViewModelList(modelList);
         }
-        public async Task<ManageAdminViewModel> GetAdminById(string userId)
-        {
-            ApplicationUser user = await userManager.FindByIdAsync(userId);
-            if (user != null)
-            {
-                var vm = new ManageAdminViewModel(user);
-                return vm;
-            }else
-            {
-                return null;
-            }
-        }
+
 
         private List<ManageAdminViewModel> ConvertModeltoViewModelList(IEnumerable<ApplicationUser> modelList)
         {

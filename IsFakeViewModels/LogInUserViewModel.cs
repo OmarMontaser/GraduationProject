@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IsFakeViewModels
 {
-    public  class LogInUserViewModel
+    public class LogInUserViewModel
     {
         [Required]
         public string UserName { get; set; }

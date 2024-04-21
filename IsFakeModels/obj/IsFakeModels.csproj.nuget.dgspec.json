@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFakeModels\\IsFakeModels.csproj": {}
+    "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeModels\\IsFakeModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFakeModels\\IsFakeModels.csproj": {
+    "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeModels\\IsFakeModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFakeModels\\IsFakeModels.csproj",
+        "projectUniqueName": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeModels\\IsFakeModels.csproj",
         "projectName": "IsFakeModels",
-        "projectPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFakeModels\\IsFakeModels.csproj",
+        "projectPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeModels\\IsFakeModels.csproj",
         "packagesPath": "C:\\Users\\Montaser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFakeModels\\obj\\",
+        "outputPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Montaser\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,10 +48,6 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.15, )"
-            },
-            "bootstrap": {
-              "target": "Package",
-              "version": "[5.3.3, )"
             }
           },
           "imports": [

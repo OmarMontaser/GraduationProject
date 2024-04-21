@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IsFakeServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6d71ebc9ffee0f40b5a961f5e70328b0705c862")]
 [assembly: System.Reflection.AssemblyProductAttribute("IsFakeServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IsFakeServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

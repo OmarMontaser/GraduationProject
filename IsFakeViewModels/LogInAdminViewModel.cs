@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IsFakeModels;
 
 namespace IsFakeViewModels
 {
@@ -15,6 +16,6 @@ namespace IsFakeViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
         public bool RememberMe { get; set; }
-
+        
     }
 }

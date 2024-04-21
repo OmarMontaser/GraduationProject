@@ -1,4 +1,5 @@
 ﻿using IsFakeModels;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace IsFakeViewModels
 {
-    public  class ManageAdminViewModel //: ApplicationUser
+    public  class ManageAdminViewModel : IdentityUser
     {
-        public ApplicationUser Id { get; set; }
+        public string Id { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
         public DateTime CreatedAt { get; set; }
@@ -19,17 +20,18 @@ namespace IsFakeViewModels
 
         public ManageAdminViewModel(ApplicationUser model)
         {
-
+            Id = model.Id;
             UserName = model.UserName;
             Email = model.Email;
             CreatedAt = model.CreatedAt;
-            IsActivate = model.IsActivate;
+           IsActivate = model.IsActivate;
         }
 
         public ApplicationUser ConvertViewModel(ManageAdminViewModel model)
         {
             return new ApplicationUser
             {
+                Id = model.Id,
                 UserName = model.UserName,
                 Email = model.Email,
                 CreatedAt = model.CreatedAt,

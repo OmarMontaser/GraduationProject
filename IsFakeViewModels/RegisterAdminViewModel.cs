@@ -24,6 +24,8 @@ namespace IsFakeViewModels
         [DataType(DataType.Password)]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
-        
+
+        public DateTime CreatedDate { get; set; }
+
     }
 }

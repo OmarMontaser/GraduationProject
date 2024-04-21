@@ -13,6 +13,6 @@ namespace IsFakeModels
         public string FeedbackSubject { get; set;}
         public string FeedbackContent { get; set; }
 
-
+       // public List<ApplicationUser> ApplicationUser { get; set; }
     }
 }
