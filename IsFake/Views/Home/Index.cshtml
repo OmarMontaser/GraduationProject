@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+
+    body {
+        background-image: url('/images/img10.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+   
+}
+
+    .welcome-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top: 20vh; /* Adjust the top margin */
+}
+
+    .blue-text {
+        color: blue; /* Change to your preferred blue color */
+    }
+
+</style>
+
+
+
+
+    
+
+
+
+
+<div class="welcome-container">
+    <div class="text-center">
+        <h3 class="welcome-text">Welcome to the DeepFake app</h3>
+        <h3>Deepfake App to detect fake voices.</h3>
+        <h3>Check now if the audio is real or fake</h3>
+        <h3>Before we start <a href="/Auth/Register" class="blue-text">Make An Account</a> or <a href="/Auth/LogIn" class="blue-text">Login</a></h3>
+    </div>
+</div>
+
+

@@ -1,0 +1,89 @@
+﻿@model IsFakeViewModels.RegisterUserViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa; 
+        background-image: url('/images/img8.jpg'); 
+        background-size: 100vw auto; 
+        background-position: center;
+    }
+
+
+
+    .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+     
+}
+
+
+
+
+    .signup-form {
+        width: 100%;
+        max-width: 400px; 
+        padding: 20px;
+        background-color: #B2BABB;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+</style>
+
+
+<div class="signup-container">
+    <div class="signup-form">
+        <h1 class="text-center">SignUp</h1>
+
+
+
+        <hr />
+        <form asp-action="Register">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label">First Name</label>
+                <input asp-for="FirstName" class="form-control" required />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label">Last Name</label>
+                <input asp-for="LastName" class="form-control" required />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label">Username</label>
+                <input asp-for="UserName" class="form-control" required />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control" required />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label">Confirm Password</label>
+                <input asp-for="ConfirmPassword" type="password" class="form-control" required />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">SignUp</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

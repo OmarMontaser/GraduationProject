@@ -1,0 +1,35 @@
+﻿@model IsFakeViewModels.RoleViewModel
+
+@{
+    ViewData["Title"] = "New";
+}
+
+<h1>New</h1>
+
+<h4>Add New Role By Admin Only</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="New" class="needs-validation" novalidate>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Role Name</label>
+                <input asp-for="Name" class="form-control" required />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Return to Home</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,45 @@
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.deps.json
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfoInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfo.cs
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.AssemblyReference.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CopyComplete
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.deps.json
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.AssemblyReference.cache
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.GeneratedMSBuildEditorConfig.editorconfig
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfoInputs.cache
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfo.cs
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CoreCompileInputs.cache
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CopyComplete
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.deps.json
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.AssemblyReference.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfoInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfo.cs
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeVi.E8135460.Up2Date
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll

@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\roles\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\roles\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\manageadmin\\getalladmins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\manageadmin\\getalladmins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\authadmin\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\authadmin\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|c:\\users\\montaser\\onedrive\\desktop\\graduation-project-master\\isfake\\views\\authadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784F110D-9BF1-46E6-A4BC-E1F4BBFD51B3}|IsFake\\IsFake.csproj|solutionrelative:isfake\\views\\authadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Roles\\New.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\Roles\\New.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\Roles\\New.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\Roles\\New.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllAdmins.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\ManageAdmin\\GetAllAdmins.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\ManageAdmin\\GetAllAdmins.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\ManageAdmin\\GetAllAdmins.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\ManageAdmin\\GetAllAdmins.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\AuthAdmin\\AddAdmin.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\AuthAdmin\\AddAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\AuthAdmin\\AddAdmin.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\AuthAdmin\\AddAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\AuthAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "IsFake\\Views\\AuthAdmin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Montaser\\OneDrive\\Desktop\\graduation-project-master\\IsFake\\Views\\AuthAdmin\\Index.cshtml",
+              "RelativeToolTip": "IsFake\\Views\\AuthAdmin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T19:59:07.669Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

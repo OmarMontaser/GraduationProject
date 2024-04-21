@@ -1,0 +1,57 @@
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeServices.deps.json
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeServices.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.AssemblyInfoInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.AssemblyInfo.cs
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.CoreCompileInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\refint\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\ref\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeRepository.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeRepository.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.AssemblyReference.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.CopyComplete
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeServices.deps.json
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeServices.dll
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeServices.pdb
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeRepository.dll
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeViewModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeRepository.pdb
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeViewModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.AssemblyReference.cache
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.GeneratedMSBuildEditorConfig.editorconfig
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.AssemblyInfoInputs.cache
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.AssemblyInfo.cs
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.CoreCompileInputs.cache
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.CopyComplete
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.dll
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\refint\IsFakeServices.dll
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.pdb
+H:\Graduation Project\graduation-project-master\IsFakeServices\obj\Debug\net7.0\ref\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeServices.deps.json
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeServices.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeRepository.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeRepository.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.AssemblyReference.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.AssemblyInfoInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.AssemblyInfo.cs
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.csproj.CoreCompileInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeSe.B205FB3B.Up2Date
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\refint\IsFakeServices.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\IsFakeServices.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeServices\obj\Debug\net7.0\ref\IsFakeServices.dll

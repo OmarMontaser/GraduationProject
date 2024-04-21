@@ -1,0 +1,36 @@
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\bin\Debug\net7.0\IsFakeModels.deps.json
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.csproj.AssemblyReference.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.AssemblyInfoInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.AssemblyInfo.cs
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.csproj.CoreCompileInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\refint\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\IsFake\IsFakeModels\obj\Debug\net7.0\ref\IsFakeModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeModels\bin\Debug\net7.0\IsFakeModels.deps.json
+H:\Graduation Project\graduation-project-master\IsFakeModels\bin\Debug\net7.0\IsFakeModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeModels\bin\Debug\net7.0\IsFakeModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.csproj.AssemblyReference.cache
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.GeneratedMSBuildEditorConfig.editorconfig
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.AssemblyInfoInputs.cache
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.AssemblyInfo.cs
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.csproj.CoreCompileInputs.cache
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\refint\IsFakeModels.dll
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.pdb
+H:\Graduation Project\graduation-project-master\IsFakeModels\obj\Debug\net7.0\ref\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\bin\Debug\net7.0\IsFakeModels.deps.json
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.csproj.AssemblyReference.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.AssemblyInfoInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.AssemblyInfo.cs
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.csproj.CoreCompileInputs.cache
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\refint\IsFakeModels.dll
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Montaser\OneDrive\Desktop\graduation-project-master\IsFakeModels\obj\Debug\net7.0\ref\IsFakeModels.dll

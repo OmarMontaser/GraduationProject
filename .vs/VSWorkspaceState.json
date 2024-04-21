@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\IsFake",
+    "\\IsFakeRepository\\Implementation",
+    "\\IsFake\\Views",
+    "\\IsFake\\Views\\Shared"
+  ],
+  "SelectedNode": "\\IsFake\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}
