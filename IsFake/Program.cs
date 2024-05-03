@@ -23,6 +23,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IStatements, StatementService>();
 builder.Services.AddScoped<IManageAdmin, ManageAdminService>();
+builder.Services.AddScoped<UserStatement>();
+
 //builder.Services.AddScoped<>();
 
 
