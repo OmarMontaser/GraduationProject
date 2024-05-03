@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IsFake.Controllers.Admin
 {
-    [Authorize(Roles ="Admin")]
+//    [Authorize(Roles ="Admin")]
     public class AuthAdminController : Controller
     {
         private readonly UserManager<ApplicationUser> userManager;
@@ -18,6 +18,7 @@ namespace IsFake.Controllers.Admin
             userManager = _UserManager;
             signInManager = _signInManager;
         }
+        [Authorize(Roles = "Admin")]
 
         [HttpGet]
         public IActionResult Index()
@@ -26,12 +27,14 @@ namespace IsFake.Controllers.Admin
         }
 
 
+        [Authorize(Roles = "Admin")]
 
         [HttpGet]
         public IActionResult AddAdmin()
         {
             return View();
         }
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -66,6 +69,7 @@ namespace IsFake.Controllers.Admin
             }
             return View(newUser);
         }
+
         [HttpGet]
         public async Task<IActionResult> LogOut()
         {

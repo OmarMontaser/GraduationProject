@@ -16,8 +16,10 @@ namespace IsFakeModels
         public DateTime CreatedDate { get; set; } = DateTime.Now ;
 
 
+        
         public string ApplicationUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
+        
 
       //  public Statement Statement { get; set; }
     }

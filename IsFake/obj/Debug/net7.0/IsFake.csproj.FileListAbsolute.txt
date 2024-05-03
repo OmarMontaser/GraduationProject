@@ -1198,3 +1198,5 @@ C:\Users\Montaser\OneDrive\Desktop\Graduation-Project\IsFake\obj\Debug\net7.0\sc
 C:\Users\Montaser\OneDrive\Desktop\Graduation-Project\IsFake\obj\Debug\net7.0\IsFake.csproj.Up2Date
 C:\Users\Montaser\OneDrive\Desktop\Graduation-Project\IsFake\obj\Debug\net7.0\IsFake.genruntimeconfig.cache
 C:\Users\Montaser\OneDrive\Desktop\Graduation-Project\IsFake\obj\Debug\net7.0\ref\IsFake.dll
+C:\Users\Montaser\OneDrive\Desktop\Graduation-Project\IsFake\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Montaser\OneDrive\Desktop\Graduation-Project\IsFake\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

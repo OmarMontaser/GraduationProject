@@ -15,11 +15,16 @@ namespace IsFake.Controllers.Admin
         {
             return View(_manageadmin.GetAll());
         }
-        public IActionResult GetAdminById(string id)
+        public IActionResult GetAllUsers()
+        {
+            return View(_manageadmin.GetAll());
+        }
+
+        public IActionResult GetDetailsOfUser(string id)
         {
              return View(_manageadmin.GetAdminData(id));
         }
-        
 
+        
     }
 }

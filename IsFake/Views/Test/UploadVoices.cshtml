@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering;
+@model IsFakeViewModels.TestProgramViewModel
+
+@{
+    ViewData["Title"] = "Upload Voices";
+}
+
+<h1>UploadVoices</h1>
+
+<h4>TestProgramViewModel</h4>
+
+<form asp-controller="Test" , asp-action="UploadVoices" , enctype="multipart/form-data" >
+    <div class="row">
+ 
+        <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StatementId" class="form-label mt-4"></label>
+                    <select class="form-select" asp-for="StatementId" asp-items="Model.Statements">
+                        <option value="">Select Statement</option>
+                    </select>
+                    <span asp-validation-for="StatementId" class="text-danger"></span>
+                 </div>
+        </div>
+        <div class="col-md-6">
+               <div class="form-group">
+                   <label asp-for="VoiceFile" class="form-label mt-4"></label>
+                   <input type ="file" class="form-control" asp-for="VoiceFile"/>
+                   <span asp-validation-for="VoiceFile" class="text-danger"></span>
+               </div>
+        </div>
+        <div>
+            <div class="col-md-12">
+                 <input type="submit" value="Upload" />
+            </div>
+        </div>
+   
+    </div> 
+     
+</form>
+
+
+@*
+<form method="post" enctype="multipart/form-data" asp-controller="Test" asp-action="UploadVoices">
+    <div class="form-group">
+        <div class="col md-10">
+            <p>Upload files using this form</p>
+            <input type="file" name="files" multiple />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+</form>
+*@

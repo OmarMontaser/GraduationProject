@@ -34,10 +34,9 @@ namespace IsFakeServices
         public IEnumerable<ManageAdminViewModel> GetAll()
         {
 
-            var modelList = _unitofwork.GenericRepository<ApplicationUser>().GetAll();
+            var modelList = _unitofwork.GenericRepository<ApplicationUser>().GetAll();//.OrderBy(user =>user.UserName);
             return ConvertModeltoViewModelList(modelList);
         }
-
 
         private List<ManageAdminViewModel> ConvertModeltoViewModelList(IEnumerable<ApplicationUser> modelList)
         {
