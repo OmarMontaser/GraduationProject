@@ -68,14 +68,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="AuthAdmin" asp-action="AddAdmin">Add Admin</a>
                         </li>
 
+                        
                         }
-                        else if (!(User.IsInRole("Admin"))){
+
+                        @if (User.Identity.IsAuthenticated==true && !(User.IsInRole("Admin")))
+                        {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Test" asp-action="UploadVoices">UploadVoices</a>
                             </li>
                         }
-
-
 
                     </ul>
                 </div>               
