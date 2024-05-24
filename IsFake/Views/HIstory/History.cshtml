@@ -1,0 +1,47 @@
+﻿@model IEnumerable<IsFakeViewModels.HIstoryViewModel>
+
+@{
+    ViewData["Title"] = "History";
+}
+
+<h1>User History</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatementFile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VoiceFile)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @foreach (var statementFile in item.StatementFile)
+                    {
+                        <p>@statementFile</p>
+                    }
+                </td>
+                <td>
+                    @foreach (var voiceFile in item.VoiceFile)
+                    {
+                        <audio controls> </audio> 
+                    }
+        
+                 </td>
+            </tr>
+        }
+    </tbody>
+</table>

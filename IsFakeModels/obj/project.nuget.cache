@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "w3SiqgQFoyfmiwVwH6kupU1OQp8K+wnQgTvP0adzDY7bS1iXNY8iYHVV+u5gW3AzmLeLDiOL09SBiT2Q6MumGA==",
+  "dgSpecHash": "oTfa3u5vfMxPdCc658c+r6lzKLnvwI1Dh11Llu6UcVnmNDzFJVJ/DibSzIsFP+pvCWlnrqO0LRc86jHjdICZYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeModels\\IsFakeModels.csproj",
   "expectedPackageFiles": [
@@ -22,9 +22,9 @@
     "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
     "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
-    "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
-    "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
+    "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\Montaser\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512"
   ],
   "logs": []
 }
