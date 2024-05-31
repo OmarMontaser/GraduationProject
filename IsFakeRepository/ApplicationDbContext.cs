@@ -27,6 +27,7 @@ namespace IsFakeRepository
         public DbSet<Statement> Statements { get; set; }
         public DbSet<UserStatement> UserStatements { get; set; }
         public DbSet<UserRecord> UserRecords { get; set; }
+        public DbSet<CheckVoice> CheckVoice { get; set; }
 
 
     }

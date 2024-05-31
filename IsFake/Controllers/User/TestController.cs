@@ -30,12 +30,12 @@ namespace IsFake.Controllers.User
             _userStatement = userStatement;
             _userManager = userManager;
             _WHE = WHE;
-            _VoiceStatementPath = $"{_WHE.WebRootPath}/Voices/UserStatementVoices";
+            _VoiceStatementPath = $"{_WHE.WebRootPath}/Voices/CheckVoices";
             _httpClient = httpClient;
         }
 
         [HttpGet]
-        public IActionResult UploadVoices()
+        public IActionResult CheckVoice()
         {
             TestProgramViewModel viewModel = new()
             {
@@ -51,7 +51,7 @@ namespace IsFake.Controllers.User
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadVoices(TestProgramViewModel model)
+        public async Task<IActionResult> CheckVoice(TestProgramViewModel model)
         {
             ApplicationUser currentUser = await _userManager.GetUserAsync(User);
 
@@ -65,14 +65,14 @@ namespace IsFake.Controllers.User
                     await model.VoiceFile.CopyToAsync(stream);
                 }
 
-                UserStatement userStatementObj = new UserStatement
+                CheckVoice CheckVoiceObj = new CheckVoice
                 {
                     VoiceFile = path,
                     CreatedDate = DateTime.Now,
                     ApplicationUser = currentUser,
                 };
 
-                _context.UserStatements.Add(userStatementObj);
+                _context.CheckVoice.Add(CheckVoiceObj);
                 _context.SaveChanges();
 
                 // Call the Flask API
@@ -84,7 +84,7 @@ namespace IsFake.Controllers.User
             }
 
             // Redirect to the same page
-            return View("UploadVoices", model);
+            return View("CheckVoice", model);
         }
 
         private async Task<string> CallFlaskAPI(string filePath)
