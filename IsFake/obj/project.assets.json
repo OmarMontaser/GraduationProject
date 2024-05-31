@@ -13696,19 +13696,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Montaser\\.nuget\\packages\\": {}
+    "C:\\Users\\Hady\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFake\\IsFake.csproj",
+      "projectUniqueName": "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFake\\IsFake.csproj",
       "projectName": "IsFake",
-      "projectPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFake\\IsFake.csproj",
-      "packagesPath": "C:\\Users\\Montaser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFake\\obj\\",
+      "projectPath": "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFake\\IsFake.csproj",
+      "packagesPath": "C:\\Users\\Hady\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFake\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Montaser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hady\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13716,20 +13716,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeRepository\\IsFakeRepository.csproj": {
-              "projectPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeRepository\\IsFakeRepository.csproj"
+            "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFakeRepository\\IsFakeRepository.csproj": {
+              "projectPath": "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFakeRepository\\IsFakeRepository.csproj"
             },
-            "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeServices\\IsFakeServices.csproj": {
-              "projectPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeServices\\IsFakeServices.csproj"
+            "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFakeServices\\IsFakeServices.csproj": {
+              "projectPath": "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFakeServices\\IsFakeServices.csproj"
             },
-            "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeViewModels\\IsFakeViewModels.csproj": {
-              "projectPath": "C:\\Users\\Montaser\\OneDrive\\Desktop\\Graduation-Project\\IsFakeViewModels\\IsFakeViewModels.csproj"
+            "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj": {
+              "projectPath": "C:\\Users\\Hady\\source\\repos\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj"
             }
           }
         }
@@ -13789,24 +13790,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -13815,7 +13798,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   },

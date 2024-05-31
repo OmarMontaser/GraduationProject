@@ -18,7 +18,7 @@ namespace IsFake.Controllers.Admin
             userManager = _UserManager;
             signInManager = _signInManager;
         }
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
 
         [HttpGet]
         public IActionResult Index()
@@ -27,14 +27,14 @@ namespace IsFake.Controllers.Admin
         }
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
 
         [HttpGet]
         public IActionResult AddAdmin()
         {
             return View();
         }
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
 
         [HttpPost]
         [ValidateAntiForgeryToken]
