@@ -87,6 +87,8 @@ namespace IsFake.Controllers.User
                     if (found)
                     {
                         await signInManager.SignInAsync(userModel, uservm.RememberMe);
+                        userModel.LastLogIn = DateTime.Now;
+                        await userManager.UpdateAsync(userModel);
                         return RedirectToAction("Index");
                     }
                 }

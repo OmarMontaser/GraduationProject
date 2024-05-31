@@ -11,13 +11,18 @@ namespace IsFake.Controllers.Admin
             _manageadmin = manageadmin;
         }
         
-        public IActionResult GetAllAdmins()
+        public async Task<IActionResult> GetAllAdmins()
         {
-            return View(_manageadmin.GetAll());
+            var adminViewModels = await _manageadmin.GetAll(); // Await the async method here
+
+            return View(adminViewModels);//_manageadmin.GetAll());
         }
-        public IActionResult GetAllUsers()
+        public async Task<IActionResult> GetAllUsers()
         {
-            return View(_manageadmin.GetAll());
+            var userViewModels = await _manageadmin.GetAllUsers(); // Await the async method here
+
+            return View(userViewModels);//_manageadmin.GetAll());
+
         }
 
         public IActionResult GetDetailsOfUser(string id)

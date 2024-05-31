@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IsFakeRepository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97b90850b6e90d224ba59b82f30b4c15d6b65c2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1d737f63c70c58a844bed5e3a9047a2f0a78d17")]
 [assembly: System.Reflection.AssemblyProductAttribute("IsFakeRepository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IsFakeRepository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

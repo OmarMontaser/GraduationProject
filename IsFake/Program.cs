@@ -19,14 +19,21 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 //        options=>options.Password.RequireDigit=true,    
     .AddEntityFrameworkStores<ApplicationDbContext>();
+//    .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IdentityRole>();
 builder.Services.AddScoped<IStatements, StatementService>();
 builder.Services.AddScoped<IManageAdmin, ManageAdminService>();
 builder.Services.AddScoped<UserStatement>();
 builder.Services.AddScoped<UserRecord>();
 
 //builder.Services.AddScoped<>();
+
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient(); // Add this line
+
 
 
 var app = builder.Build();

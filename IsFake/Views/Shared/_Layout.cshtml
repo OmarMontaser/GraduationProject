@@ -52,9 +52,18 @@
 
                         @if (User.IsInRole("Admin"))
                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="AdminProfile">Profile</a>
+                            </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="StatementAdmin" asp-action="AddStatement">Statement</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="StatementAdmin" asp-action="AddStatement">Add Statement</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="StatementAdmin" asp-action="Index">Statements List</a>
+                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="ManageAdmin" asp-action="GetAllAdmins">Admins</a>
@@ -68,14 +77,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="AuthAdmin" asp-action="AddAdmin">Add Admin</a>
                         </li>
 
-                        
+                        <li class="nav-item">
+                             <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="New">Roles</a>
+                        </li>
+
+
                         }
 
                         @if (User.Identity.IsAuthenticated==true && !(User.IsInRole("Admin")))
                         {
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="UserProfile">Profile</a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Test" asp-action="UploadVoices">UploadVoices</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="HIstory" asp-action="History">History</a>
+                            </li>
+
                         }
 
                     </ul>

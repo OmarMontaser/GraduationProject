@@ -15,7 +15,7 @@ namespace IsFakeViewModels
         public string Email { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime LastLogIn { get; set; } = DateTime.Now;
-        public bool IsActivate { get; set; }
+        //public bool IsActivate { get; set; }
 
         public DetailsOfUserViewModel() { }
 
@@ -27,7 +27,7 @@ namespace IsFakeViewModels
             Email      = model.Email;
             CreatedAt  = model.CreatedAt;
             LastLogIn  = model.LastLogIn;
-            IsActivate = model.IsActivate;
+          //  IsActivate = model.IsActivate;
         }
 
         public ApplicationUser ConvertViewModel(DetailsOfUserViewModel model)
@@ -39,7 +39,7 @@ namespace IsFakeViewModels
                 Email      = model.Email,
                 CreatedAt  = model.CreatedAt,
                 LastLogIn  = model.LastLogIn,
-                IsActivate = model.IsActivate,
+            //    IsActivate = model.IsActivate,
             };
 
         }

@@ -8,14 +8,14 @@ using System.Linq;
 
 namespace IsFake.Controllers.User
 {
-    public class HIstoryController : Controller
+    public class HistoryController : Controller
     {
         public readonly ApplicationDbContext _context;
         public readonly UserStatement _userStatement;
         public readonly UserRecord _userRecord;
         public readonly UserManager<ApplicationUser> _userManager;
        // public readonly IdentityUser _identityUser;
-        public HIstoryController(ApplicationDbContext context,
+        public HistoryController(ApplicationDbContext context,
                               UserStatement userStatement,
                               UserRecord userRecord,
                               UserManager<ApplicationUser> userManager
@@ -40,18 +40,27 @@ namespace IsFake.Controllers.User
                 return NotFound();
             }
 
-            // Fetch user records from UserStatement and UserRecord tables
-            var userStatements = _context.UserStatements.Where(UserStatement => UserStatement.ApplicationUserId == currentUser.Id);
-            var userRecords    = _context.UserRecords.Where(UserRecord => UserRecord.ApplicationUserId == currentUser.Id);
+            // Fetch user records from UserStatement
+            //var userStatements = _context.UserStatements.Where(UserStatement => UserStatement.ApplicationUserId == currentUser.Id);
+
+            var uuserStatements = _context.UserStatements
+                .Where(us => us.ApplicationUserId == currentUser.Id)
+                .Select(us => us.VoiceFile) // Select the specific property you want to display
+                .ToList();
 
             // Construct a view model to pass data to the view
-            var viewModel = new HIstoryViewModel
+            var viewModel = new List<HistoryCompareViewModel>
+            {
+                    new HistoryCompareViewModel
             {
                // Id = currentUser.Id,
-                UserName = currentUser.UserName,
-                StatementFile = userStatements.ToList(), // Assuming StatementFile and VoiceFile are lists
-                VoiceFile = userRecords.ToList()
+               // UserName = currentUser.UserName,
+                StatementFile = uuserStatements.ToList(), // Assuming StatementFile and VoiceFile are lists
+              //  VoiceFile = userRecords.ToList()
+            } 
+            
             };
+               
 
             return View(viewModel);
         }

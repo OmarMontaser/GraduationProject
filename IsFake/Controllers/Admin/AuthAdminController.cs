@@ -97,7 +97,9 @@ namespace IsFake.Controllers.Admin
                     if (found)
                     {
                         await signInManager.SignInAsync(userModel, uservm.RememberMe);
-                        //return RedirectToAction("Index");
+                        userModel.LastLogIn = DateTime.Now;
+                        await userManager.UpdateAsync(userModel);
+
                         return RedirectToAction("Index", "AuthAdmin");
                     }
                 }

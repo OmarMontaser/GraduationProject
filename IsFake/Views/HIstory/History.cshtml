@@ -1,4 +1,4 @@
-﻿@model IEnumerable<IsFakeViewModels.HIstoryViewModel>
+﻿@model IEnumerable<IsFakeViewModels.HistoryCompareViewModel>
 
 @{
     ViewData["Title"] = "History";
@@ -9,16 +9,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UserName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StatementFile)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.VoiceFile)
-            </th>
-            <th></th>
+            <th>Statement Files</th>
         </tr>
     </thead>
     <tbody>
@@ -26,21 +17,13 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.UserName)
+                    <ul>
+                        @foreach (var statementFile in item.StatementFile)
+                        {
+                            <li>@statementFile</li>
+                        }
+                    </ul>
                 </td>
-                <td>
-                    @foreach (var statementFile in item.StatementFile)
-                    {
-                        <p>@statementFile</p>
-                    }
-                </td>
-                <td>
-                    @foreach (var voiceFile in item.VoiceFile)
-                    {
-                        <audio controls> </audio> 
-                    }
-        
-                 </td>
             </tr>
         }
     </tbody>

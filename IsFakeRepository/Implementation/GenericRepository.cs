@@ -20,6 +20,12 @@ namespace IsFakeRepository.Implementation
             dbset = _context.Set<T>();
         }
 
+        public IEnumerable<T> Where(Expression<Func<T, bool>> predicate)
+        {
+            return dbset.Where(predicate).ToList();
+        }
+
+
         public void Add(T entity)
         {
             dbset.Add(entity);

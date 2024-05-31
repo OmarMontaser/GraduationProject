@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IsFakeModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb2cf239995d3bb2b4b085729e963a3d3dce4037")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1d737f63c70c58a844bed5e3a9047a2f0a78d17")]
 [assembly: System.Reflection.AssemblyProductAttribute("IsFakeModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IsFakeModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,6 +10,7 @@ namespace IsFakeRepository.Interface
         public interface IGenericRepository<T> : IDisposable
         {
             IEnumerable<T> GetAll();
+            IEnumerable<T> Where(Expression<Func<T, bool>> predicate);
             T GetById(T id);
             T GetById(string id);
             T GetById(int id);
@@ -26,12 +27,12 @@ namespace IsFakeRepository.Interface
 
             IEnumerable<T> FindAll(Expression<Func<T, bool>> match, int? take, int? skip,
                 Expression<Func<T, object>> orderBy = null, string orderByDirection = "Asc");
+      
 
-
-            /*IEnumerable<T> GetAll(
-                Expression<Func<T, bool>> filter = null,
-                Func<IQueryable<T>, IQueryable<T>> orderBy = null,
-                string includeProperties = "");
-            */
-        }
+        /*IEnumerable<T> GetAll(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IQueryable<T>> orderBy = null,
+            string includeProperties = "");
+        */
+    }
 }
