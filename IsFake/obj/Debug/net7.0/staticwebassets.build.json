@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RKbbvkKwZVElZ+ufv14CaZHDKxWm5d9obTUm9AATFl8=",
+  "Hash": "MH89iW1nlg2GAVtWm8GdM4acJ1+HZOp42UTmnjlFF6s=",
   "Source": "IsFake",
   "BasePath": "_content/IsFake",
   "Mode": "Default",
@@ -3342,12 +3342,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\TestVoices\\09705276-4a0e-4c77-8aa6-fec20a5abf7a.png",
+      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\CheckVoices\\26166f64-649f-4dfc-8eb4-a62e72809047.wav",
       "SourceId": "IsFake",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\",
       "BasePath": "_content/IsFake",
-      "RelativePath": "Voices/TestVoices/09705276-4a0e-4c77-8aa6-fec20a5abf7a.png",
+      "RelativePath": "Voices/CheckVoices/26166f64-649f-4dfc-8eb4-a62e72809047.wav",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3358,15 +3358,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Voices\\TestVoices\\09705276-4a0e-4c77-8aa6-fec20a5abf7a.png"
+      "OriginalItemSpec": "wwwroot\\Voices\\CheckVoices\\26166f64-649f-4dfc-8eb4-a62e72809047.wav"
     },
     {
-      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg",
+      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\CheckVoices\\c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav",
       "SourceId": "IsFake",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\",
       "BasePath": "_content/IsFake",
-      "RelativePath": "Voices/UserStatementVoices/0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg",
+      "RelativePath": "Voices/CheckVoices/c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3377,15 +3377,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Voices\\UserStatementVoices\\0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg"
+      "OriginalItemSpec": "wwwroot\\Voices\\CheckVoices\\c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav"
     },
     {
-      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg",
+      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\CheckVoices\\e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav",
       "SourceId": "IsFake",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\",
       "BasePath": "_content/IsFake",
-      "RelativePath": "Voices/UserStatementVoices/56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg",
+      "RelativePath": "Voices/CheckVoices/e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3396,64 +3396,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Voices\\UserStatementVoices\\56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\65b64820-5081-424c-a59e-f5862ee5d376.png",
-      "SourceId": "IsFake",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\",
-      "BasePath": "_content/IsFake",
-      "RelativePath": "Voices/UserStatementVoices/65b64820-5081-424c-a59e-f5862ee5d376.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Voices\\UserStatementVoices\\65b64820-5081-424c-a59e-f5862ee5d376.png"
-    },
-    {
-      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\db180260-8140-4b55-9b59-97ae8ea943fe.jpg",
-      "SourceId": "IsFake",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\",
-      "BasePath": "_content/IsFake",
-      "RelativePath": "Voices/UserStatementVoices/db180260-8140-4b55-9b59-97ae8ea943fe.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Voices\\UserStatementVoices\\db180260-8140-4b55-9b59-97ae8ea943fe.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav",
-      "SourceId": "IsFake",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\",
-      "BasePath": "_content/IsFake",
-      "RelativePath": "Voices/UserStatementVoices/f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Voices\\UserStatementVoices\\f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav"
+      "OriginalItemSpec": "wwwroot\\Voices\\CheckVoices\\e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav"
     }
   ]
 }

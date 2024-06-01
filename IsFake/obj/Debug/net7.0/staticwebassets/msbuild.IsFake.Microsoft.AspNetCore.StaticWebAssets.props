@@ -1824,12 +1824,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\TestVoices\09705276-4a0e-4c77-8aa6-fec20a5abf7a.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\CheckVoices\26166f64-649f-4dfc-8eb4-a62e72809047.wav))">
       <SourceType>Package</SourceType>
       <SourceId>IsFake</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/IsFake</BasePath>
-      <RelativePath>Voices/TestVoices/09705276-4a0e-4c77-8aa6-fec20a5abf7a.png</RelativePath>
+      <RelativePath>Voices/CheckVoices/26166f64-649f-4dfc-8eb4-a62e72809047.wav</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1838,14 +1838,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\TestVoices\09705276-4a0e-4c77-8aa6-fec20a5abf7a.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\CheckVoices\26166f64-649f-4dfc-8eb4-a62e72809047.wav))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\CheckVoices\c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav))">
       <SourceType>Package</SourceType>
       <SourceId>IsFake</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/IsFake</BasePath>
-      <RelativePath>Voices/UserStatementVoices/0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg</RelativePath>
+      <RelativePath>Voices/CheckVoices/c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1854,14 +1854,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\CheckVoices\c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\CheckVoices\e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav))">
       <SourceType>Package</SourceType>
       <SourceId>IsFake</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/IsFake</BasePath>
-      <RelativePath>Voices/UserStatementVoices/56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg</RelativePath>
+      <RelativePath>Voices/CheckVoices/e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1870,55 +1870,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\65b64820-5081-424c-a59e-f5862ee5d376.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>IsFake</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/IsFake</BasePath>
-      <RelativePath>Voices/UserStatementVoices/65b64820-5081-424c-a59e-f5862ee5d376.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\65b64820-5081-424c-a59e-f5862ee5d376.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\db180260-8140-4b55-9b59-97ae8ea943fe.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>IsFake</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/IsFake</BasePath>
-      <RelativePath>Voices/UserStatementVoices/db180260-8140-4b55-9b59-97ae8ea943fe.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\db180260-8140-4b55-9b59-97ae8ea943fe.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav))">
-      <SourceType>Package</SourceType>
-      <SourceId>IsFake</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/IsFake</BasePath>
-      <RelativePath>Voices/UserStatementVoices/f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\UserStatementVoices\f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Voices\CheckVoices\e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

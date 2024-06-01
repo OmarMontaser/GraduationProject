@@ -24,6 +24,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="wwwroot\Voices\CheckVoices\" />
 	  <Folder Include="wwwroot\Voices\TestVoices\" />
 	  <Folder Include="wwwroot\Voices\UserStatementVoices\" />
 	</ItemGroup>

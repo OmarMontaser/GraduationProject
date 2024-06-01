@@ -5,39 +5,39 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
 
 namespace IsFake.Controllers.User
 {
-    public class TestController : Controller
+    public class CompareController : Controller
     {
         public readonly ApplicationDbContext _context;
-        public readonly CheckVoice _checkvoice;
+        public readonly UserStatement _userStatement;
+        public readonly UserRecord _userRecord;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IWebHostEnvironment _WHE;
         private readonly string _VoiceStatementPath;
-        private readonly HttpClient _httpClient;
-
-        public TestController(ApplicationDbContext context,
-                              CheckVoice checkvoice,
+        private readonly string _VoiceRecordPath;
+        public CompareController(ApplicationDbContext context,
+                              UserStatement userStatement,
+                              UserRecord userRecord,
                               UserManager<ApplicationUser> userManager,
-                              IWebHostEnvironment WHE,
-                              HttpClient httpClient)
+                              IWebHostEnvironment WHE
+                               )
         {
             _context = context;
-            _checkvoice = checkvoice;
+            _userStatement = userStatement;
+            _userRecord = userRecord;
             _userManager = userManager;
             _WHE = WHE;
-            _VoiceStatementPath = $"{_WHE.WebRootPath}/Voices/CheckVoices";
-            _httpClient = httpClient;
+            _VoiceStatementPath = $"{_WHE.WebRootPath}/Voices/UserStatementVoices";
+            _VoiceRecordPath = $"{_WHE.WebRootPath}/Voices/TestVoices";
+
         }
 
         [HttpGet]
-        public IActionResult CheckVoice()
+        public IActionResult CompareVoices()
         {
-            TestProgramViewModel viewModel = new()
+            CompareViewModel viewModel = new()
             {
                 Statements = _context.Statements
                           .Select(c => new SelectListItem
@@ -50,8 +50,9 @@ namespace IsFake.Controllers.User
             return View(viewModel);
         }
 
+
         [HttpPost]
-        public async Task<IActionResult> CheckVoice(TestProgramViewModel model)
+        public async Task<IActionResult> CompareVoices(CompareViewModel model)
         {
             ApplicationUser currentUser = await _userManager.GetUserAsync(User);
 
@@ -64,46 +65,40 @@ namespace IsFake.Controllers.User
                     // Copy file to stream
                     await model.VoiceFile.CopyToAsync(stream);
                 }
-
-                CheckVoice CheckVoiceObj = new CheckVoice
+                UserStatement userStatementObj = new UserStatement
                 {
                     VoiceFile = path,
                     CreatedDate = DateTime.Now,
                     ApplicationUser = currentUser,
                 };
 
-                _context.CheckVoice.Add(CheckVoiceObj);
-                _context.SaveChanges();
-
-                // Call the Flask API
-                var flaskResponse = await CallFlaskAPI(path);
-                if (flaskResponse != null)
-                {
-                    ViewBag.Prediction = flaskResponse;
-                }
+                _context.UserStatements.Add(userStatementObj);
             }
+            if (model.RecordFile != null)
+            {
+                //var recordFile = model.RecordFile;
+                var userRecord = $"{Guid.NewGuid()}{Path.GetExtension(model.RecordFile.FileName)}";
+                var path2 = Path.Combine(_VoiceRecordPath, userRecord);
+                using (var stream = new FileStream(path2, FileMode.Create))
+                {
+                    await model.RecordFile.CopyToAsync(stream);
+                }
+                UserRecord userRecordObj = new UserRecord
+                {
+                    RecordFile = path2,
+                    RecordsDate = DateTime.Now,
+                    ApplicationUser = currentUser,
+                };
+                _context.UserRecords.Add(userRecordObj);
+            }
+
+            _context.SaveChanges();
 
             // Redirect to the same page
-            return View("CheckVoice", model);
+            return RedirectToAction("UploadVoices", "Test");
         }
 
-        private async Task<string> CallFlaskAPI(string filePath)
-        {
-            using (var form = new MultipartFormDataContent())
-            {
-                var fileContent = new StreamContent(System.IO.File.OpenRead(filePath));
-                fileContent.Headers.ContentType = new MediaTypeHeaderValue("multipart/form-data");
-                form.Add(fileContent, "file", Path.GetFileName(filePath));
 
-                HttpResponseMessage response = await _httpClient.PostAsync("http://localhost:5000/predict", form);
-                response.EnsureSuccessStatusCode();
-                var result = await response.Content.ReadAsStringAsync();
-                return result;
-            }
-        }
     }
 }
-
-
-
 

@@ -9,10 +9,9 @@ using System.Threading.Tasks;
 using IsFakeModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-
 namespace IsFakeViewModels
 {
-    public class TestProgramViewModel
+    public class CompareViewModel
     {
         [Display(Name = "Statemet")]
         public string StatementId { get; set; }
@@ -24,11 +23,7 @@ namespace IsFakeViewModels
 
 
         // from userRecord
-        // public IFormFile RecordFile { get; set; } = default!;
-
-
-
-
+        public IFormFile RecordFile { get; set; } = default!;
 
     }
 }

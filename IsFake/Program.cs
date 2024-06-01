@@ -17,7 +17,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 
 //register usermanager , rolemanager --> userrole
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-//        options=>options.Password.RequireDigit=true,    
+//        options=>options.Password.RequireDigit=true,
     .AddEntityFrameworkStores<ApplicationDbContext>();
 //    .AddDefaultTokenProviders();
 
@@ -27,6 +27,7 @@ builder.Services.AddScoped<IStatements, StatementService>();
 builder.Services.AddScoped<IManageAdmin, ManageAdminService>();
 builder.Services.AddScoped<UserStatement>();
 builder.Services.AddScoped<UserRecord>();
+builder.Services.AddScoped<CheckVoice>();
 
 //builder.Services.AddScoped<>();
 

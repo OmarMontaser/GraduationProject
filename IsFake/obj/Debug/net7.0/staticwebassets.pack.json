@@ -181,28 +181,16 @@
       "PackagePath": "staticwebassets\\IsFake.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\TestVoices\\09705276-4a0e-4c77-8aa6-fec20a5abf7a.png",
-      "PackagePath": "staticwebassets\\Voices\\TestVoices\\09705276-4a0e-4c77-8aa6-fec20a5abf7a.png"
+      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\CheckVoices\\26166f64-649f-4dfc-8eb4-a62e72809047.wav",
+      "PackagePath": "staticwebassets\\Voices\\CheckVoices\\26166f64-649f-4dfc-8eb4-a62e72809047.wav"
     },
     {
-      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg",
-      "PackagePath": "staticwebassets\\Voices\\UserStatementVoices\\0d1daa73-72b0-44bf-8454-fe40f0fc665c.jpg"
+      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\CheckVoices\\c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav",
+      "PackagePath": "staticwebassets\\Voices\\CheckVoices\\c1fa7146-23e5-4479-90c1-6fe3a7e3b672.wav"
     },
     {
-      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg",
-      "PackagePath": "staticwebassets\\Voices\\UserStatementVoices\\56f794f7-90d1-4abf-ba22-37e74a2c75d7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\65b64820-5081-424c-a59e-f5862ee5d376.png",
-      "PackagePath": "staticwebassets\\Voices\\UserStatementVoices\\65b64820-5081-424c-a59e-f5862ee5d376.png"
-    },
-    {
-      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\db180260-8140-4b55-9b59-97ae8ea943fe.jpg",
-      "PackagePath": "staticwebassets\\Voices\\UserStatementVoices\\db180260-8140-4b55-9b59-97ae8ea943fe.jpg"
-    },
-    {
-      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\UserStatementVoices\\f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav",
-      "PackagePath": "staticwebassets\\Voices\\UserStatementVoices\\f0569c93-1bb6-40cc-a97d-cd8a4bde7cf1.wav"
+      "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\Voices\\CheckVoices\\e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav",
+      "PackagePath": "staticwebassets\\Voices\\CheckVoices\\e55cf024-fdbb-47c7-9c4d-f45ad6cbdfcc.wav"
     },
     {
       "Id": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFake\\wwwroot\\css\\site.css",
