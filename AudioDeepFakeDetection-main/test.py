@@ -8,7 +8,6 @@ import joblib
 
 
 
-
 def runtest(example_file_path):
     loaded_model = joblib.load("models/random_forest_model.joblib")
 
@@ -28,6 +27,3 @@ def runtest(example_file_path):
         return f"{class_label} Audio File"
     else:
         return "Error extracting features from the example file."
-    
-
-    
