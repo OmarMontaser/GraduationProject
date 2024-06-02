@@ -118,8 +118,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVtZW50QWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/omarm/OneDrive/Desktop/GraduationProject/IsFake/Views/TestProgram/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFByb2dyYW1cVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/omarm/OneDrive/Desktop/GraduationProject/IsFake/Views/Test/CheckVoice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxDaGVja1ZvaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarm/OneDrive/Desktop/GraduationProject/IsFake/Views/Test/UploadVoices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxVcGxvYWRWb2ljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/omarm/OneDrive/Desktop/GraduationProject/IsFake/Views/_ViewImports.cshtml]
