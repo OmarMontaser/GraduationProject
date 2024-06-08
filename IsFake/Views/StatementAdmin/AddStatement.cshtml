@@ -3,31 +3,185 @@
 @{
     ViewData["Title"] = "AddStatement";
 }
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - Arsha Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-<h1>Add Statement</h1>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<h4>Add new Statement</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="AddStatement">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Text" class="control-label"></label>
-                <input asp-for="Text" class="form-control" />
-                <span asp-validation-for="Text" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Add" class="btn btn-primary" />
-            </div>
-        </form>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: #0056b3;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .container-fluid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .logo h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header .navmenu {
+            display: flex;
+            align-items: center;
+        }
+
+            .header .navmenu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+            }
+
+            .header .navmenu li {
+                margin-left: 20px;
+            }
+
+            .header .navmenu a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s ease;
+            }
+
+                .header .navmenu a:hover {
+                    color: #007bff;
+                }
+
+        .header .btn-getstarted {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .header .btn-getstarted:hover {
+                background-color: #0056b3;
+            }
+
+        .form-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+            .form-container h1 {
+                color: #37517e;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .form-container p {
+                color: #37517e;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .form-container hr {
+                margin-bottom: 20px;
+            }
+
+            .form-container .form-group {
+                margin-bottom: 15px;
+            }
+
+            .form-container .btn {
+                display: block;
+                width: 100%;
+            }
+
+            .form-container .back-link {
+                text-align: center;
+                display: block;
+                margin-top: 20px;
+            }
+    </style>
+</head>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center me-auto">
+            <h1 class="sitename">IsFake</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li class="nav-item"><a asp-area="" asp-controller="ManageAdmin" asp-action="GetAllAdmins">Admins</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="ManageAdmin" asp-action="GetAllUsers">Users</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="StatementAdmin" asp-action="AddStatement">Add Statement</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="StatementAdmin" asp-action="Index">Statements List</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="AuthAdmin" asp-action="AddAdmin">Add Admin</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Profile" asp-action="AdminProfile">Profile</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Auth" asp-action="LogOut">LogOut</a></li>
+                <li class="nav-item"><a class="sitename" style="font-size:30px;">@User.Identity.Name</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
     </div>
-</div>
+</header>
 
-<div>
-    <a asp-action="Index">Back to Home</a>
-</div>
+<br />
+<br />
+<br />
 
+
+<body class="container">
+    <br />
+    <h1 align="center" style="color:#37517e">Add statement</h1>
+    <p align="center" style="color:#37517e">Add new statement</p>
+    <br />
+    <hr align="center" style="color:black;" />
+    <div class="row">
+        <div class="">
+            <form asp-action="AddStatement">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Text" class="control-label"></label>
+                    <input asp-for="Text" class="form-control" />
+                    <span asp-validation-for="Text" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Add" class="btn btn-primary" style="width:50%;margin-left:300px;" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="margin-left:300px;">
+        <a asp-action="Index">Back to Home</a>
+    </div>
+</body>
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

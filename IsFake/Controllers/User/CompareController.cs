@@ -12,166 +12,270 @@ using System.Threading.Tasks;
 
 namespace IsFake.Controllers.User
 {
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+    using Newtonsoft.Json.Linq;
+    using System.Net.Http;
+    using System.Net.Http.Headers;
+    using System.Threading.Tasks;
+
+    [Authorize]
     public class CompareController : Controller
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        private readonly ILogger<CompareController> _logger;
-        private readonly string _voiceStatementPath;
-        private readonly string _voiceRecordPath;
+        private readonly IWebHostEnvironment _WHE;
+        private readonly string _VoiceStatementPath;
+        private readonly string _VoiceRecordPath;
 
-        public CompareController(ApplicationDbContext context,
-                                 UserManager<ApplicationUser> userManager,
-                                 IWebHostEnvironment webHostEnvironment,
-                                 ILogger<CompareController> logger)
+        public CompareController(ApplicationDbContext context, UserManager<ApplicationUser> userManager, IWebHostEnvironment WHE)
         {
             _context = context;
             _userManager = userManager;
-            _webHostEnvironment = webHostEnvironment;
-            _logger = logger;
-            _voiceStatementPath = Path.Combine(_webHostEnvironment.WebRootPath, "Voices", "UserStatementVoices");
-            _voiceRecordPath = Path.Combine(_webHostEnvironment.WebRootPath, "Voices", "TestVoices");
+            _WHE = WHE;
+            _VoiceStatementPath = $"{_WHE.WebRootPath}/Voices/UserStatementVoices";
+            _VoiceRecordPath = $"{_WHE.WebRootPath}/Voices/TestVoices";
         }
 
         [HttpGet]
         public IActionResult CompareVoices()
         {
-            var viewModel = new CompareViewModel
+            CompareViewModel viewModel = new()
             {
                 Statements = _context.Statements
-                    .Select(c => new SelectListItem
-                    {
-                        Value = c.StatementId.ToString(),
-                        Text = c.Text
-                    })
-                    .ToList()
+                          .Select(c => new SelectListItem
+                          {
+                              Value = c.StatementId.ToString(),
+                              Text = c.Text
+                          })
+                          .ToList()
             };
-
             return View(viewModel);
         }
 
         [HttpPost]
         public async Task<IActionResult> CompareVoices(CompareViewModel model)
         {
-            if (!ModelState.IsValid)
+            ApplicationUser currentUser = await _userManager.GetUserAsync(User);
+            string voice1Path = null, voice2Path = null;
+
+            if (model.VoiceFile != null)
             {
-                _logger.LogWarning("Model state is invalid.");
-                return View(model);
-            }
-
-            var currentUser = await _userManager.GetUserAsync(User);
-            if (currentUser == null)
-            {
-                _logger.LogWarning("User not found.");
-                return Unauthorized();
-            }
-
-            var userStatementPath = await SaveUploadedFileAsync(model.VoiceFile, _voiceStatementPath);
-            var userRecordPath = await SaveUploadedFileAsync(model.RecordFile, _voiceRecordPath);
-
-            if (string.IsNullOrEmpty(userStatementPath) || string.IsNullOrEmpty(userRecordPath))
-            {
-                _logger.LogWarning("Both voice files must be provided.");
-                return BadRequest("Both voice files must be provided.");
-            }
-
-            var userStatement = new UserStatement
-            {
-                VoiceFile = userStatementPath,
-                CreatedDate = DateTime.Now,
-                ApplicationUser = currentUser
-            };
-            _context.UserStatements.Add(userStatement);
-
-            var userRecord = new UserRecord
-            {
-                RecordFile = userRecordPath,
-                RecordsDate = DateTime.Now,
-                ApplicationUser = currentUser
-            };
-            _context.UserRecords.Add(userRecord);
-
-            await _context.SaveChangesAsync();
-
-            var comparisonResult = await CompareVoiceFilesAsync(userStatementPath, userRecordPath);
-
-            if (comparisonResult != null)
-            {
-                ViewBag.Message = comparisonResult.result ? "The voices are similar." : "The voices are not similar.";
-                ViewBag.Similarity = comparisonResult.similarity;
-            }
-            else
-            {
-                ViewBag.Error = "Error comparing voices.";
-            }
-
-            return View("CompareVoices");
-        }
-
-        private async Task<string> SaveUploadedFileAsync(IFormFile file, string destinationPath)
-        {
-            if (file == null)
-            {
-                return null;
-            }
-
-            Directory.CreateDirectory(destinationPath); // Ensure the directory exists
-
-            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
-            var fullPath = Path.Combine(destinationPath, fileName);
-
-            try
-            {
-                using (var stream = new FileStream(fullPath, FileMode.Create))
+                var userStatement = $"{Guid.NewGuid()}{Path.GetExtension(model.VoiceFile.FileName)}";
+                var path = Path.Combine(_VoiceStatementPath, userStatement);
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
-                    await file.CopyToAsync(stream);
+                    await model.VoiceFile.CopyToAsync(stream);
                 }
-                _logger.LogInformation($"File saved successfully to {fullPath}");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Error saving file to {fullPath}: {ex.Message}");
-                return null;
+                voice1Path = path;
             }
 
-            return fullPath;
+            if (model.RecordFile != null)
+            {
+                var userRecord = $"{Guid.NewGuid()}{Path.GetExtension(model.RecordFile.FileName)}";
+                var path2 = Path.Combine(_VoiceRecordPath, userRecord);
+                using (var stream = new FileStream(path2, FileMode.Create))
+                {
+                    await model.RecordFile.CopyToAsync(stream);
+                }
+                voice2Path = path2;
+            }
+
+            var result = await CompareVoicesAsync(voice1Path, voice2Path, 0.998996455946643);
+            ViewData["Result"] = result;
+
+            return View(model);
         }
 
-        private async Task<dynamic> CompareVoiceFilesAsync(string voice1Path, string voice2Path)
+        private async Task<string> CompareVoicesAsync(string voice1Path, string voice2Path, double threshold)
         {
-            try
+            using (var client = new HttpClient())
             {
-                using (var httpClient = new HttpClient())
+                using (var form = new MultipartFormDataContent())
                 {
-                    using (var form = new MultipartFormDataContent())
-                    {
-                        form.Add(new StreamContent(new FileStream(voice1Path, FileMode.Open)), "voice1", Path.GetFileName(voice1Path));
-                        form.Add(new StreamContent(new FileStream(voice2Path, FileMode.Open)), "voice2", Path.GetFileName(voice2Path));
-                        form.Add(new StringContent("0.5"), "threshold");
+                    form.Add(new StringContent(threshold.ToString()), "threshold");
+                    form.Add(new ByteArrayContent(System.IO.File.ReadAllBytes(voice1Path)), "voice1", Path.GetFileName(voice1Path));
+                    form.Add(new ByteArrayContent(System.IO.File.ReadAllBytes(voice2Path)), "voice2", Path.GetFileName(voice2Path));
 
-                        var response = await httpClient.PostAsync("http://localhost:5000/compare", form);
+                    var response = await client.PostAsync("http://localhost:5000/compare", form);
+                    response.EnsureSuccessStatusCode();
 
-                        if (response.IsSuccessStatusCode)
-                        {
-                            var responseData = await response.Content.ReadAsStringAsync();
-                            return JsonConvert.DeserializeObject<dynamic>(responseData);
-                        }
-                        else
-                        {
-                            _logger.LogError($"Error in voice comparison API response: {response.StatusCode}");
-                        }
-                    }
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    var jsonObject = JObject.Parse(jsonString);
+
+                    bool result = jsonObject.Value<bool>("result");
+                    double similarity = jsonObject.Value<double>("similarity");
+
+                    return $"Result: {(result ? "Similar" : "Not Similar")}, Percentage: {similarity * 100:0.00}%";
                 }
             }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Exception during voice comparison: {ex.Message}");
-            }
-
-            return null;
         }
+
     }
+
+
+
+
+    /*  public class CompareController : Controller
+      {
+          private readonly ApplicationDbContext _context;
+          private readonly UserManager<ApplicationUser> _userManager;
+          private readonly IWebHostEnvironment _webHostEnvironment;
+          private readonly ILogger<CompareController> _logger;
+          private readonly string _voiceStatementPath;
+          private readonly string _voiceRecordPath;
+
+          public CompareController(ApplicationDbContext context,
+                                   UserManager<ApplicationUser> userManager,
+                                   IWebHostEnvironment webHostEnvironment,
+                                   ILogger<CompareController> logger)
+          {
+              _context = context;
+              _userManager = userManager;
+              _webHostEnvironment = webHostEnvironment;
+              _logger = logger;
+              _voiceStatementPath = Path.Combine(_webHostEnvironment.WebRootPath, "Voices", "UserStatementVoices");
+              _voiceRecordPath = Path.Combine(_webHostEnvironment.WebRootPath, "Voices", "TestVoices");
+          }
+
+          [HttpGet]
+          public IActionResult CompareVoices()
+          {
+              var viewModel = new CompareViewModel
+              {
+                  Statements = _context.Statements
+                      .Select(c => new SelectListItem
+                      {
+                          Value = c.StatementId.ToString(),
+                          Text = c.Text
+                      })
+                      .ToList()
+              };
+
+              return View(viewModel);
+          }
+
+          [HttpPost]
+          public async Task<IActionResult> CompareVoices(CompareViewModel model)
+          {
+              if (!ModelState.IsValid)
+              {
+                  _logger.LogWarning("Model state is invalid.");
+                  return View(model);
+              }
+
+              var currentUser = await _userManager.GetUserAsync(User);
+              if (currentUser == null)
+              {
+                  _logger.LogWarning("User not found.");
+                  return Unauthorized();
+              }
+
+              var userStatementPath = await SaveUploadedFileAsync(model.VoiceFile, _voiceStatementPath);
+              var userRecordPath = await SaveUploadedFileAsync(model.RecordFile, _voiceRecordPath);
+
+              if (string.IsNullOrEmpty(userStatementPath) || string.IsNullOrEmpty(userRecordPath))
+              {
+                  _logger.LogWarning("Both voice files must be provided.");
+                  return BadRequest("Both voice files must be provided.");
+              }
+
+              var userStatement = new UserStatement
+              {
+                  VoiceFile = userStatementPath,
+                  CreatedDate = DateTime.Now,
+                  ApplicationUser = currentUser
+              };
+              _context.UserStatements.Add(userStatement);
+
+              var userRecord = new UserRecord
+              {
+                  RecordFile = userRecordPath,
+                  RecordsDate = DateTime.Now,
+                  ApplicationUser = currentUser
+              };
+              _context.UserRecords.Add(userRecord);
+
+              await _context.SaveChangesAsync();
+
+              var comparisonResult = await CompareVoiceFilesAsync(userStatementPath, userRecordPath);
+
+              if (comparisonResult != null)
+              {
+                  ViewBag.Message = comparisonResult.result ? "The voices are similar." : "The voices are not similar.";
+                  ViewBag.Similarity = comparisonResult.similarity;
+              }
+              else
+              {
+                  ViewBag.Error = "Error comparing voices.";
+              }
+
+              return View("CompareVoices");
+          }
+
+          private async Task<string> SaveUploadedFileAsync(IFormFile file, string destinationPath)
+          {
+              if (file == null)
+              {
+                  return null;
+              }
+
+              Directory.CreateDirectory(destinationPath); // Ensure the directory exists
+
+              var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+              var fullPath = Path.Combine(destinationPath, fileName);
+
+              try
+              {
+                  using (var stream = new FileStream(fullPath, FileMode.Create))
+                  {
+                      await file.CopyToAsync(stream);
+                  }
+                  _logger.LogInformation($"File saved successfully to {fullPath}");
+              }
+              catch (Exception ex)
+              {
+                  _logger.LogError($"Error saving file to {fullPath}: {ex.Message}");
+                  return null;
+              }
+
+              return fullPath;
+          }
+
+          private async Task<dynamic> CompareVoiceFilesAsync(string voice1Path, string voice2Path)
+          {
+              try
+              {
+                  using (var httpClient = new HttpClient())
+                  {
+                      using (var form = new MultipartFormDataContent())
+                      {
+                          form.Add(new StreamContent(new FileStream(voice1Path, FileMode.Open)), "voice1", Path.GetFileName(voice1Path));
+                          form.Add(new StreamContent(new FileStream(voice2Path, FileMode.Open)), "voice2", Path.GetFileName(voice2Path));
+                          form.Add(new StringContent("0.5"), "threshold");
+
+                          var response = await httpClient.PostAsync("http://localhost:5000/compare", form);
+
+                          if (response.IsSuccessStatusCode)
+                          {
+                              var responseData = await response.Content.ReadAsStringAsync();
+                              return JsonConvert.DeserializeObject<dynamic>(responseData);
+                          }
+                          else
+                          {
+                              _logger.LogError($"Error in voice comparison API response: {response.StatusCode}");
+                          }
+                      }
+                  }
+              }
+              catch (Exception ex)
+              {
+                  _logger.LogError($"Exception during voice comparison: {ex.Message}");
+              }
+
+              return null;
+          }
+      }*/
 }
 
 

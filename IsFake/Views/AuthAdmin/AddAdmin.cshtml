@@ -15,7 +15,7 @@
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">0
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -32,72 +32,189 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Arsha
-    * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-    * Updated: May 18 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
-<body class="index-page">
+
+<body class="container">
+<style>
+        .header {
+            background-color: #0056b3;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .header .container-fluid {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .header .logo h1 {
+                color: white;
+                margin: 0;
+                font-size: 24px;
+            }
+
+            .header .navmenu {
+                display: flex;
+                align-items: center;
+            }
+
+                .header .navmenu ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                }
+
+                .header .navmenu li {
+                    margin-left: 20px;
+                }
+
+                .header .navmenu a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    transition: color 0.3s ease;
+                }
+
+                    .header .navmenu a:hover {
+                        color: #007bff;
+                    }
+
+            .header .btn-getstarted {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 4px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+                .header .btn-getstarted:hover {
+                    background-color: #0056b3;
+                }
+
+        .form-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+            .form-container h1 {
+                color: #37517e;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .form-container p {
+                color: #37517e;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .form-container hr {
+                margin-bottom: 20px;
+            }
+
+            .form-container .form-group {
+                margin-bottom: 15px;
+            }
+
+            .form-container .btn {
+                display: block;
+                width: 100%;
+            }
+
+            .form-container .back-link {
+                text-align: center;
+                display: block;
+                margin-top: 20px;
+            }
+    </style>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">IsFake</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li class="nav-item"><a asp-area="" asp-controller="ManageAdmin" asp-action="GetAllAdmins">Admins</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="ManageAdmin" asp-action="GetAllUsers">Users</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="StatementAdmin" asp-action="AddStatement">Add Statement</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="StatementAdmin" asp-action="Index">Statements List</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="AuthAdmin" asp-action="AddAdmin">Add Admin</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="Profile" asp-action="AdminProfile">Profile</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="Auth" asp-action="LogOut">LogOut</a></li>
+                    <li class="nav-item"><a class="sitename" style="font-size:30px;">@User.Identity.Name</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <section id="contact" class="contact section">
+        <h1 align="center" style="color:#37517e">Add Admin</h1>
+        <br />
+        <hr align="center" style="color:black;" />
 
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+        <div class="row" align="center">
+            <div style="width:50%;margin-left:300px;">
+                <form asp-action="AddAdmin" class="needs-validation" novalidate>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label">First Name</label>
+                        <input asp-for="FirstName" class="form-control" required />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label">Last Name</label>
+                        <input asp-for="LastName" class="form-control" required />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="UserName" class="control-label">User Name</label>
+                        <input asp-for="UserName" class="form-control" required />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label">Email</label>
+                        <input asp-for="Email" class="form-control" required />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label">Password</label>
+                        <input asp-for="Password" type="password" class="form-control" required />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="control-label">Confirm Password</label>
+                        <input asp-for="ConfirmPassword" type="password" class="form-control" required />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Create</button>
+                    </div>
+                    <br />
+                    <div>
+                        <a asp-action="LogIn">Back to Home</a>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-<h1>Add Admin</h1>
 
-<h4>Add New Admin</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="AddAdmin" class="needs-validation" novalidate>
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label">First Name</label>
-                <input asp-for="FirstName" class="form-control" required />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label">Last Name</label>
-                <input asp-for="LastName" class="form-control" required />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UserName" class="control-label">User Name</label>
-                <input asp-for="UserName" class="form-control" required />
-                <span asp-validation-for="UserName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">Email</label>
-                <input asp-for="Email" class="form-control" required />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label">Password</label>
-                <input asp-for="Password" type="password" class="form-control" required />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ConfirmPassword" class="control-label">Confirm Password</label>
-                <input asp-for="ConfirmPassword" type="password" class="form-control" required />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Create</button>
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="LogIn" class="btn btn-secondary">Back to Home</a>
-</div>
-</section>
+    </section>
 </body>
 
 @section Scripts {

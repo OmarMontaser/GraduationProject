@@ -1,0 +1,50 @@
+﻿@{
+    var contrastColor = "#ffffff"; // Change this to your desired contrast color
+    var accentColor = "#007bff"; // Change this to your desired accent color
+}
+
+<style>
+    .header {
+        --default-color: @contrastColor;
+        --accent-color: @accentColor;
+    }
+</style>
+
+<div class="header">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Is Fake</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Compare" asp-action="CompareVoices">Compare Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Test" asp-action="CheckVoice">Check Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="HIstory" asp-action="History">History</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Auth" asp-action="LogOut">LogOut</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Profile" asp-action="UserProfile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="sitename" style="font-size:30px;">@User.Identity.Name</a>
+                </li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted" href="#contact">Contact us</a>
+
+    </div>
+</div>

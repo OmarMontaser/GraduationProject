@@ -64,7 +64,7 @@ namespace IsFake.Controllers.User
         public async Task<IActionResult> LogOut()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("LogIn");
+            return RedirectToAction("Index", "Home");
         }
 
 

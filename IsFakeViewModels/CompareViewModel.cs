@@ -25,5 +25,6 @@ namespace IsFakeViewModels
         // from userRecord
         public IFormFile RecordFile { get; set; } = default!;
 
+        public string result { get; set; }
     }
 }

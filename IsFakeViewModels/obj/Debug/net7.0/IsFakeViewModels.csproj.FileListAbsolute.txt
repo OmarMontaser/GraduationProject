@@ -46,3 +46,50 @@ C:\Users\omarm\OneDrive\Desktop\GraduationProject\IsFakeViewModels\obj\Debug\net
 C:\Users\omarm\OneDrive\Desktop\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
 C:\Users\omarm\OneDrive\Desktop\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
 C:\Users\omarm\OneDrive\Desktop\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.deps.json
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.AssemblyReference.cache
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfoInputs.cache
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfo.cs
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.sourcelink.json
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeVi.E8135460.Up2Date
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\Hady\Desktop\omar\GraduationProject\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.deps.json
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.AssemblyReference.cache
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfoInputs.cache
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfo.cs
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CoreCompileInputs.cache
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeVi.E8135460.Up2Date
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\omarm\OneDrive\Desktop\GP\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.deps.json
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\bin\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.dll
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\bin\Debug\net7.0\IsFakeModels.pdb
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.AssemblyReference.cache
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfoInputs.cache
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.AssemblyInfo.cs
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.csproj.CoreCompileInputs.cache
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.sourcelink.json
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeVi.E8135460.Up2Date
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\refint\IsFakeViewModels.dll
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\IsFakeViewModels.pdb
+C:\Users\omarm\OneDrive\Desktop\Graduation Project\IsFakeViewModels\obj\Debug\net7.0\ref\IsFakeViewModels.dll

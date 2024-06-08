@@ -8,7 +8,7 @@ using IsFakeRepository.Implementation;
 
 namespace IsFake.Controllers.Admin
 {
-    //[Authorize(Roles="Admin")]
+    [Authorize(Roles="Admin")]
     public class StatementAdminController : Controller
     {
         private readonly IStatements _statement;

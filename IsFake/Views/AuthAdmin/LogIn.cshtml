@@ -26,7 +26,121 @@
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
+
+    .header {
+        background-color: #007bff;
+        padding: 15px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .header .container-fluid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .logo h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header .navmenu {
+            display: flex;
+            align-items: center;
+        }
+
+            .header .navmenu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+            }
+
+            .header .navmenu li {
+                margin-left: 20px;
+            }
+
+            .header .navmenu a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s ease;
+            }
+
+                .header .navmenu a:hover {
+                    color: #007bff;
+                }
+
+        .header .btn-getstarted {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .header .btn-getstarted:hover {
+                background-color: #0056b3;
+            }
+
+    .form-container {
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+        .form-container h1 {
+            color: #37517e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container p {
+            color: #37517e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container hr {
+            margin-bottom: 20px;
+        }
+
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container .btn {
+            display: block;
+            width: 100%;
+        }
+
+        .form-container .back-link {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+        }
 </style>
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center me-auto">
+            <h1 class="sitename">IsFake</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+
+    </div>
+</header>
 
 
 <div class="login-container">

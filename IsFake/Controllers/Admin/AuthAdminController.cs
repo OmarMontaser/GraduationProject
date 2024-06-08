@@ -1,5 +1,7 @@
 ﻿using IsFakeModels;
 using IsFakeViewModels;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -70,11 +72,23 @@ namespace IsFake.Controllers.Admin
             return View(newUser);
         }
 
-        [HttpGet]
+        /*        [HttpGet]
+                public async Task<IActionResult> LogOut()
+                {
+                    await signInManager.SignOutAsync();
+                    return RedirectToAction("Index", "Home");
+                }
+        */
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> LogOut()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("LogIn");
+            HttpContext.Session.Clear();
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            return RedirectToAction("Index", "Home");
         }
 
 

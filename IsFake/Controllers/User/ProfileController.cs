@@ -1,11 +1,13 @@
 ﻿using IsFakeModels;
 using IsFakeRepository.Interface;
 using IsFakeViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IsFake.Controllers.User
 {
+    [Authorize]
     public class ProfileController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

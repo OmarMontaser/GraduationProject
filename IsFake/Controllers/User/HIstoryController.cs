@@ -1,6 +1,7 @@
 ﻿using IsFakeModels;
 using IsFakeRepository;
 using IsFakeViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Linq;
 
 namespace IsFake.Controllers.User
 {
+    [Authorize]
     public class HistoryController : Controller
     {
         public readonly ApplicationDbContext _context;

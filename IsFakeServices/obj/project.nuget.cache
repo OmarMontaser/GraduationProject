@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BWvx3ga6lqs=",
+  "dgSpecHash": "M2X/uIbyOyg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeServices\\IsFakeServices.csproj",
+  "projectFilePath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeServices\\IsFakeServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omarm\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\omarm\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -1,71 +1,218 @@
-﻿@using Microsoft.AspNetCore.Mvc.Rendering;
-@model IsFakeViewModels.CompareViewModel
+﻿@model IsFakeViewModels.CompareViewModel
 
 @{
-    ViewData["Title"] = "CompareVoices";
+    ViewData["Title"] = "Compare Voices";
 }
-<form>
-    <div class="row">
- 
-        <div class="col-md-6">
-                <div class="form-group">
-                    <label asp-for="StatementId" class="form-label mt-4"></label>
-                    <select class="form-select" asp-for="StatementId" asp-items="Model.Statements">
-                        <option value="">Select Statement</option>
-                    </select>
-                    <span asp-validation-for="StatementId" class="text-danger"></span>
-                 </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-jcAut4Gg7vfW4zz5UJz2t6jtboIpIByG/gMyN7GQoXoN/3wF0A4KTcz/O1wT05t0" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding-top: 80px; /* Added padding for fixed header */
+        }
+
+        
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-control {
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+            .form-control[type="file"] {
+                padding: 3px;
+            }
+
+        .small-text {
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        .alert {
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .alert-info {
+            background-color: #e9f7fc;
+            border-left: 5px solid #17a2b8;
+            color: #0c5460;
+        }
+
+        .header {
+            background-color: #007bff;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .header .container-fluid {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .header .logo h1 {
+                color: white;
+                margin: 0;
+                font-size: 24px;
+            }
+
+            .header .navmenu {
+                display: flex;
+                align-items: center;
+            }
+
+                .header .navmenu ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                }
+
+                .header .navmenu li {
+                    margin-left: 20px;
+                }
+
+                .header .navmenu a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    transition: color 0.3s ease;
+                }
+
+                    .header .navmenu a:hover {
+                        color: #007bff;
+                    }
+
+            .header .btn-getstarted {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 4px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+                .header .btn-getstarted:hover {
+                    background-color: #0056b3;
+                }
+
+    </style>
+</head>
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center">
+                <h1 class="sitename">IsFake</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul class="d-flex">
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="Compare" asp-action="CompareVoices">Compare Voice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="Test" asp-action="CheckVoice">Check Voice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="History" asp-action="History">History Check</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="Profile" asp-action="UserProfile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="Auth" asp-action="LogOut">LogOut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sitename" style="font-size:20px;">@User.Identity.Name</a>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="#contact">Contact us</a>
         </div>
-        <div class="col-md-6">
-               <div class="form-group">
-                   <label asp-for="VoiceFile" class="form-label mt-4"></label>
-                   <input type ="file" class="form-control" asp-for="VoiceFile"/>
-                   <span asp-validation-for="VoiceFile" class="text-danger"></span>
-               </div>
-        </div>
+    </header>
 
-                <div class="col-md-6">
-               <div class="form-group">
-                   <label asp-for="RecordFile" class="form-label mt-4"></label>
-                   <input type ="file" class="form-control" asp-for="RecordFile"/>
-                   <span asp-validation-for="RecordFile" class="text-danger"></span>
-               </div>
-        </div>
+    <div class="container">
+        <h2>Compare Voices</h2>
 
-        <div>
-            <div class="col-md-12">
-                 <input type="submit" value="Upload" />
-            </div>
-        </div>
-   
-    </div> 
-     
-</form>
-
-
-<!--
-<h1>CompareVoices</h1>
-
-<h4>CompareViewModel</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="CompareVoices">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-action="CompareVoices" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label asp-for="StatementId" class="control-label"></label>
-                <input asp-for="StatementId" class="form-control" />
-                <span asp-validation-for="StatementId" class="text-danger"></span>
+                <label asp-for="StatementId" class="control-label">Statement</label>
+                <select asp-for="StatementId" class="form-control" asp-items="Model.Statements"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="VoiceFile" class="control-label">Voice File</label>
+                <input asp-for="VoiceFile" class="form-control" type="file" />
+                <span asp-validation-for="VoiceFile" class="text-danger"></span>
+                <span class="small-text">Upload your voice .wav Only</span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecordFile" class="control-label">Record File</label>
+                <input asp-for="RecordFile" class="form-control" type="file" />
+                <span asp-validation-for="VoiceFile" class="text-danger"></span>
+                <span class="small-text">Upload compared voice .wav Only</span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Compare" class="btn btn-primary" />
             </div>
         </form>
+
+        @if (ViewData["Result"] != null)
+        {
+            <div class="alert alert-info">
+                <strong>@ViewData["Result"]</strong>
+            </div>
+        }
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
--->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgxTVpKfE6UJ4p+rAml4wE1qaJoZfl4mGxvEs2wG2nY9Gkfn5hT" crossorigin="anonymous"></script>
+</body>
+</html>

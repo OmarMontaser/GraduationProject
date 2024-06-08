@@ -1,6 +1,7 @@
 ﻿using IsFakeModels;
 using IsFakeRepository;
 using IsFakeViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace IsFake.Controllers.User
 {
+    [Authorize]
     public class TestController : Controller
     {
         public readonly ApplicationDbContext _context;

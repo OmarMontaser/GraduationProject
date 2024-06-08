@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kPgC3SFCwYo=",
+  "dgSpecHash": "HNLfMCHztEg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj",
+  "projectFilePath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omarm\\.nuget\\packages\\microsoft.aspnet.mvc\\5.3.0\\microsoft.aspnet.mvc.5.3.0.nupkg.sha512",
     "C:\\Users\\omarm\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",

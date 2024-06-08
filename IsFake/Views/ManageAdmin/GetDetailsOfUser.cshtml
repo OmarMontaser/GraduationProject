@@ -4,12 +4,120 @@
     ViewData["Title"] = "GetDetailsOfUser";
 }
 
-<h1>GetDetailsOfUser</h1>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
 
-<div>
-    <h4>DetailsOfUserViewModel</h4>
+    h1 {
+        color: #343a40;
+        font-size: 28px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #dee2e6;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        color: #6c757d;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+        .row:last-child {
+            border-bottom: none;
+        }
+
+    .col-sm-2 {
+        flex: 0 0 25%;
+        max-width: 25%;
+        font-weight: bold;
+        color: #495057;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 75%;
+        max-width: 75%;
+        color: #495057;
+    }
+
+    .row.hidden {
+        display: none;
+    }
+
+    dl {
+        margin: 0;
+    }
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 0;
+        border-top: 1px solid #dee2e6;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    .action-links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+        .action-links a {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .action-links a:hover {
+                background-color: #0056b3;
+            }
+
+            .action-links a:last-child {
+                background-color: #6c757d;
+            }
+
+                .action-links a:last-child:hover {
+                    background-color: #5a6268;
+                }
+</style>
+
+
+<div class="container">
+    <h4>Details</h4>
     <hr />
-    <dl  class="row">
+    <dl class="row">
         <dt hidden class="col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
@@ -17,34 +125,30 @@
             @Html.DisplayFor(model => model.Id)
         </dd>
 
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.UserName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.UserName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Email)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CreatedAt)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CreatedAt)
         </dd>
-                <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.LastLogIn)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.LastLogIn)
         </dd>
 
     </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
 </div>

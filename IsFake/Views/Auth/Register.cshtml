@@ -3,8 +3,129 @@
 @{
     ViewData["Title"] = "Register";
 }
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>@ViewData["Title"] - IsFake</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet">
 
 <style>
+    .header {
+        background-color: #343a40;
+        padding: 15px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .header .container-fluid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .logo h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header .navmenu {
+            display: flex;
+            align-items: center;
+        }
+
+            .header .navmenu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+            }
+
+            .header .navmenu li {
+                margin-left: 20px;
+            }
+
+            .header .navmenu a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s ease;
+            }
+
+                .header .navmenu a:hover {
+                    color: #007bff;
+                }
+
+        .header .btn-getstarted {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .header .btn-getstarted:hover {
+                background-color: #0056b3;
+            }
+
+    .form-container {
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+        .form-container h1 {
+            color: #37517e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container p {
+            color: #37517e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container hr {
+            margin-bottom: 20px;
+        }
+
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container .btn {
+            display: block;
+            width: 100%;
+        }
+
+        .form-container .back-link {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+        }
     body {
         background-color: #f8f9fa; 
         background-image: url('/images/img8.jpg'); 
@@ -33,11 +154,100 @@
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
-</style>
 
-<br />
-<br />
-<br />
+    .header {
+        background-color: #007bff; /* Change this to your desired background color */
+        color: #fff; /* Change this to your desired text color */
+        padding: 15px 0;
+        width: 100%;
+        z-index: 999;
+        text-decoration: none;
+    }
+
+    .navmenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .navmenu ul li {
+            display: inline-block;
+            margin-right: 20px; /* Adjust spacing between menu items */
+        }
+
+            .navmenu ul li:last-child {
+                margin-right: 0;
+            }
+
+            .navmenu ul li a {
+                color: inherit;
+                text-decoration: none;
+                font-size: 16px; /* Adjust font size as needed */
+            }
+
+                .navmenu ul li a:hover {
+                    color: #fff; /* Change hover color */
+                }
+
+    .btn-getstarted {
+        background-color: #007bff; /* Change button background color */
+        color: #fff; /* Change button text color */
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        margin-left: 20px; /* Adjust spacing between button and menu */
+    }
+
+        .btn-getstarted:hover {
+            background-color: #0056b3; /* Change button hover background color */
+        }
+
+    /* Responsive Styles */
+
+    .navmenu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+        .navmenu ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .navmenu ul li a {
+            font-size: 14px; /* Adjust font size for smaller screens */
+        }
+
+    .mobile-nav-toggle {
+        display: block;
+        cursor: pointer;
+        color: #fff; /* Change toggle color */
+        font-size: 24px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    }
+</style>
+</head>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center me-auto">
+            <h1 class="sitename">IsFake</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+
+    </div>
+</header>
+
+
+
 <div class="signup-container">
     <div class="signup-form">
         <h1 class="text-center">SignUp</h1>

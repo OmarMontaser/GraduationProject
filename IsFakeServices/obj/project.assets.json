@@ -9354,11 +9354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeServices\\IsFakeServices.csproj",
+      "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeServices\\IsFakeServices.csproj",
       "projectName": "IsFakeServices",
-      "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeServices\\IsFakeServices.csproj",
+      "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeServices\\IsFakeServices.csproj",
       "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeServices\\obj\\",
+      "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeServices\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9376,11 +9376,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeRepository\\IsFakeRepository.csproj": {
-              "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeRepository\\IsFakeRepository.csproj"
+            "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeRepository\\IsFakeRepository.csproj": {
+              "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeRepository\\IsFakeRepository.csproj"
             },
-            "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj": {
-              "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj"
+            "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj": {
+              "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj"
             }
           }
         }

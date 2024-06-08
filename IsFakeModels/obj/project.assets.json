@@ -773,11 +773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj",
+      "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj",
       "projectName": "IsFakeModels",
-      "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj",
+      "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj",
       "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\obj\\",
+      "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",

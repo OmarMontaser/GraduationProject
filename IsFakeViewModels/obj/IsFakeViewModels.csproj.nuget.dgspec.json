@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj": {}
+    "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj": {
+    "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj",
         "projectName": "IsFakeModels",
-        "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj",
+        "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj",
         "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\obj\\",
+        "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj": {
+    "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj",
         "projectName": "IsFakeViewModels",
-        "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\IsFakeViewModels.csproj",
+        "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\IsFakeViewModels.csproj",
         "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeViewModels\\obj\\",
+        "outputPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj": {
-                "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\GraduationProject\\IsFakeModels\\IsFakeModels.csproj"
+              "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj": {
+                "projectPath": "C:\\Users\\omarm\\OneDrive\\Desktop\\Graduation Project\\IsFakeModels\\IsFakeModels.csproj"
               }
             }
           }

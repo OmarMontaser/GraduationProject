@@ -1,8 +1,10 @@
 ﻿using IsFakeServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IsFake.Controllers.Admin
 {
+    [Authorize]
     public class ManageAdminController : Controller
     {
         private readonly IManageAdmin _manageadmin;
